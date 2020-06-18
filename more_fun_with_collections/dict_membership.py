@@ -7,7 +7,7 @@ Purpose: demonstrate the basic use of dictionaries
 """
 
 
-def in_dict():
+def in_dict(a_dict, key):
     """
     Description: function to determine if a key exists in a dictionary
 
@@ -16,7 +16,7 @@ def in_dict():
     :returns: true if exists, false otherwise
     :raises
     """
-    pass
+    return key in a_dict
 
 
 if __name__ == '__main__':
