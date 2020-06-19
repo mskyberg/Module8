@@ -32,6 +32,8 @@ def get_switch_value(letter_grade):
         return grade_dict[letter_grade]
     if letter_grade == 'C' or letter_grade == 'c':
         return grade_dict[letter_grade]
+    if letter_grade == 'D' or letter_grade == 'd':
+        return grade_dict[letter_grade]
 
 
 def switch_average(grades):
