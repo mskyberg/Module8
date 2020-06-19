@@ -15,7 +15,19 @@ def get_switch_value(letter_grade):
     :returns: value of letter grade
     :raises ValueError: raises an exception if letter not found
     """
-    pass
+    grade_dict = {'A': 90, 'a': 90,
+                  'B': 80, 'b': 80,
+                  'C': 70, 'c': 70,
+                  'D': 60, 'd': 60,
+                  'F': 50, 'f': 50}
+
+    # I feel like this is a better solution but going to try and match instructions
+    # if letter_grade in grade_dict:
+    #     return grade_dict[letter_grade]
+    # else:
+    #     raise ValueError(f'Grade does not exist: {letter_grade}')
+    if letter_grade == 'A' or letter_grade == 'a':
+        return grade_dict[letter_grade]
 
 
 def switch_average(grades):
@@ -30,4 +42,7 @@ def switch_average(grades):
 
 
 if __name__ == '__main__':
-    pass
+    try:
+        print(get_switch_value('E'))
+    except ValueError as err:
+        print(f'Input Error: {err}')
