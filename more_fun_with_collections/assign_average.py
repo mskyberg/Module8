@@ -48,11 +48,16 @@ def switch_average(grades):
     :returns: average grade
     :raises
     """
-    pass
+    total_grades = 0
+    for grade in grades:
+        total_grades += get_switch_value(grade)
+    return total_grades / len(grades)
 
 
 if __name__ == '__main__':
     try:
+        grade_list = ['A', 'b', 'C', 'd']
+        print(f'Average grade for {grade_list} = {switch_average(grade_list)}')
         print(get_switch_value('E'))
     except ValueError as err:
         print(f'Input Error: {err}')
