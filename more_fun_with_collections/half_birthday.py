@@ -16,7 +16,7 @@ def half_birthday(date):
     :returns: return half-birthday datetime object
     :raises
     """
-    pass
+    return date + datetime.timedelta(days=182)
 
 
 if __name__ == '__main__':

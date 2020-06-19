@@ -14,7 +14,7 @@ from more_fun_with_collections import half_birthday as hbd
 class MyTestCase(unittest.TestCase):
     def test_average(self):
         birthday = datetime.datetime(2020, 6, 22)
-        expected_half = datetime.datetime(2020, 12, 22)
+        expected_half = datetime.datetime(2020, 12, 21)
         self.assertEqual(expected_half, hbd.half_birthday(birthday))
 
 
