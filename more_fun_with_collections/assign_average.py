@@ -28,11 +28,13 @@ def get_switch_value(letter_grade):
     #     raise ValueError(f'Grade does not exist: {letter_grade}')
     if letter_grade == 'A' or letter_grade == 'a':
         return grade_dict[letter_grade]
-    if letter_grade == 'B' or letter_grade == 'b':
+    elif letter_grade == 'B' or letter_grade == 'b':
         return grade_dict[letter_grade]
-    if letter_grade == 'C' or letter_grade == 'c':
+    elif letter_grade == 'C' or letter_grade == 'c':
         return grade_dict[letter_grade]
-    if letter_grade == 'D' or letter_grade == 'd':
+    elif letter_grade == 'D' or letter_grade == 'd':
+        return grade_dict[letter_grade]
+    elif letter_grade == 'F' or letter_grade == 'f':
         return grade_dict[letter_grade]
 
 
