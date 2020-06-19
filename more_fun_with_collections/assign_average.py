@@ -36,6 +36,8 @@ def get_switch_value(letter_grade):
         return grade_dict[letter_grade]
     elif letter_grade == 'F' or letter_grade == 'f':
         return grade_dict[letter_grade]
+    else:
+        raise ValueError(f'Grade does not exist: {letter_grade}')
 
 
 def switch_average(grades):
